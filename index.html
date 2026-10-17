@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Raj Plumbing – Dallas, TX | 24/7 Emergency Plumber</title>
+<meta name="description" content="Licensed Dallas plumbers. Same-day repairs, upfront pricing, 24/7 emergency service.">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f5f6;--ink:#14232b;--muted:#53666f;--cu:#b8602e;--cu2:#8f4519;--card:#fff;--line:#d9e2e5;--dark:#14232b;--ondark:#eef4f6;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d181d;--ink:#eef4f6;--muted:#9fb3bb;--cu:#e08a52;--cu2:#e08a52;--card:#14252c;--line:#244049;--dark:#091216}}
+:root[data-theme="dark"]{--bg:#0d181d;--ink:#eef4f6;--muted:#9fb3bb;--cu:#e08a52;--cu2:#e08a52;--card:#14252c;--line:#244049;--dark:#091216}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Source Serif 4',Georgia,serif;font-size:17px;line-height:1.65;padding-bottom:76px}
+h1,h2,h3,.sans,.btn,button,nav a{font-family:Archivo,system-ui,sans-serif}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--cu);outline-offset:3px}
+
+/* top bar */
+.top{background:var(--dark);color:var(--ondark);font-family:Archivo,sans-serif;font-size:14px}
+.top .wrap{display:flex;justify-content:space-between;gap:10px;padding-top:8px;padding-bottom:8px}
+.top b{color:#ffb98a}
+header{background:var(--card);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:14px;padding-bottom:14px}
+.logo{font-family:Archivo,sans-serif;font-weight:900;font-size:22px;letter-spacing:-.5px;text-decoration:none}
+.logo i{font-style:normal;color:var(--cu)}
+nav{display:none;gap:22px}
+nav a{text-decoration:none;font-weight:500;font-size:15px;color:var(--muted)}
+.hcall{background:var(--cu);color:#fff;text-decoration:none;font-family:Archivo,sans-serif;font-weight:700;padding:10px 16px;border-radius:8px;font-size:15px}
+@media(min-width:760px){nav{display:flex}}
+
+/* hero */
+.hero{background:var(--dark);color:var(--ondark);position:relative;overflow:hidden}
+.hero .wrap{padding-top:52px;padding-bottom:56px;position:relative;z-index:1}
+.hero h1{font-weight:900;font-size:clamp(40px,10vw,76px);line-height:.98;letter-spacing:-1.5px;margin:0 0 18px;max-width:14ch}
+.hero p{font-size:19px;max-width:44ch;color:#c5d4da;margin:0 0 26px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;font-weight:700;padding:15px 24px;border-radius:10px;font-size:17px}
+.b1{background:var(--cu);color:#fff}
+.b2{border:2px solid #4b6570;color:var(--ondark)}
+.pipe{position:absolute;right:-40px;top:0;height:100%;width:140px;background:repeating-linear-gradient(90deg,#b8602e 0 14px,#8f4519 14px 20px,#d98a57 20px 26px);opacity:.9;transform:skewX(-8deg)}
+@media(max-width:600px){.pipe{width:46px;right:-14px}}
+
+/* trust strip */
+.trust{background:var(--card);border-bottom:1px solid var(--line)}
+.trust .wrap{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;padding-top:20px;padding-bottom:20px}
+.trust div{font-family:Archivo,sans-serif;font-weight:700;font-size:15px;line-height:1.3}
+.trust span{display:block;font-weight:500;color:var(--muted);font-size:13px}
+@media(min-width:760px){.trust .wrap{grid-template-columns:repeat(4,1fr)}}
+
+section{padding:56px 0}
+h2{font-weight:900;font-size:clamp(28px,6vw,40px);letter-spacing:-.8px;line-height:1.1;margin:0 0 10px}
+.sub{color:var(--muted);margin:0 0 28px;max-width:56ch}
+
+/* services */
+.svc{display:grid;gap:12px}
+@media(min-width:760px){.svc{grid-template-columns:repeat(2,1fr)}}
+.s{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--cu);border-radius:8px;padding:18px 20px}
+.s h3{margin:0 0 4px;font-size:19px}
+.s p{margin:0 0 8px;color:var(--muted);font-size:16px}
+.s .pr{font-family:Archivo,sans-serif;font-weight:700;color:var(--cu2)}
+
+/* steps */
+.steps{background:var(--dark);color:var(--ondark)}
+.steps .sub{color:#b4c5cc}
+.st{display:grid;gap:22px;counter-reset:s}
+@media(min-width:760px){.st{grid-template-columns:repeat(3,1fr)}}
+.st div{border-top:3px solid var(--cu);padding-top:14px;counter-increment:s}
+.st h3{margin:0 0 4px;font-size:20px}
+.st h3::before{content:counter(s) ". "}
+.st p{margin:0;color:#c5d4da;font-size:16px}
+
+/* reviews */
+.rv{display:grid;gap:14px}
+@media(min-width:760px){.rv{grid-template-columns:repeat(3,1fr)}}
+blockquote{margin:0;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:18px 20px;font-size:16px}
+.stars{color:var(--cu);font-family:Archivo,sans-serif;letter-spacing:2px}
+blockquote small{display:block;margin-top:8px;color:var(--muted);font-family:Archivo,sans-serif}
+
+/* areas + faq */
+.areas{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.areas li{background:var(--card);border:1px solid var(--line);padding:6px 14px;border-radius:999px;font-family:Archivo,sans-serif;font-size:15px}
+details{background:var(--card);border:1px solid var(--line);border-radius:8px;margin-bottom:10px;padding:0 18px}
+summary{cursor:pointer;font-family:Archivo,sans-serif;font-weight:700;padding:16px 0;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;color:var(--cu);font-size:22px;line-height:1}
+details[open] summary::after{content:"–"}
+details p{margin:0 0 16px;color:var(--muted);font-size:16px}
+
+/* form */
+.contact{background:var(--card);border-top:1px solid var(--line)}
+.cg{display:grid;gap:30px}
+@media(min-width:760px){.cg{grid-template-columns:1fr 1fr}}
+form{display:grid;gap:12px}
+label{font-family:Archivo,sans-serif;font-weight:700;font-size:14px}
+input,select,textarea{font:inherit;font-size:16px;padding:13px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink);width:100%;margin-top:4px}
+button{border:0;cursor:pointer;background:var(--cu);color:#fff;font-weight:700;font-size:17px;padding:15px;border-radius:10px}
+#ok{display:none;padding:18px;border:2px solid var(--cu);border-radius:10px;font-family:Archivo,sans-serif;font-weight:700}
+.info p{margin:0 0 12px}
+.info a{color:var(--cu2);font-weight:600}
+
+footer{background:var(--dark);color:#9fb3bb;padding:30px 0;font-size:14px;font-family:Archivo,sans-serif}
+
+/* sticky mobile call bar */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--dark);display:flex;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px))}
+.bar a{flex:1;text-align:center;text-decoration:none;font-family:Archivo,sans-serif;font-weight:700;padding:13px;border-radius:10px;font-size:16px}
+.bar .c{background:var(--cu);color:#fff}
+.bar .q{border:2px solid #4b6570;color:var(--ondark)}
+@media(min-width:760px){.bar{display:none}body{padding-bottom:0}}
+</style>
+</head>
+<body>
+
+<div class="top"><div class="wrap"><span>Open 24/7 · Dallas–Fort Worth</span><span>Emergency line <b>(214) 555-0187</b></span></div></div>
+<header><div class="wrap">
+<a class="logo" href="#">Raj <i>Plumbing</i></a>
+<nav><a href="#services">Services</a><a href="#how">How it works</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a></nav>
+<a class="hcall" href="tel:+12145550187">Call (214) 555-0187</a>
+</div></header>
+
+<div class="hero"><div class="pipe" aria-hidden="true"></div><div class="wrap">
+<h1>Burst pipe? We’re already on the way.</h1>
+<p>Licensed Dallas plumbers with fully stocked trucks. You get a flat price before we start, and the work is guaranteed for a year.</p>
+<div class="btns"><a class="btn b1" href="tel:+12145550187">Call now</a><a class="btn b2" href="#contact">Get a free quote</a></div>
+</div></div>
+
+<div class="trust"><div class="wrap">
+<div>Licensed and insured<span>TX Master Plumber #M-00000</span></div>
+<div>90-minute arrival<span>for emergency calls</span></div>
+<div>Upfront flat pricing<span>no hourly surprises</span></div>
+<div>1-year warranty<span>on all repairs</span></div>
+</div></div>
+
+<section id="services"><div class="wrap">
+<h2>What we fix</h2>
+<p class="sub">Starting prices for Dallas–Fort Worth. We confirm the exact price before any work begins.</p>
+<div class="svc">
+<div class="s"><h3>Leak and pipe repair</h3><p>Under sinks, in walls, slab leaks, frozen pipes.</p><span class="pr">From $129</span></div>
+<div class="s"><h3>Water heater repair and install</h3><p>Tank and tankless. Old unit hauled away free.</p><span class="pr">From $899 installed</span></div>
+<div class="s"><h3>Drain cleaning</h3><p>Kitchen, shower, toilet, and main sewer lines.</p><span class="pr">From $99</span></div>
+<div class="s"><h3>Toilet and faucet repair</h3><p>Running toilets, dripping taps, new fixtures.</p><span class="pr">From $89</span></div>
+<div class="s"><h3>Gas lines</h3><p>Stove, dryer, grill, and furnace connections.</p><span class="pr">From $199</span></div>
+<div class="s"><h3>Emergency service</h3><p>Nights, weekends, holidays. A live person answers.</p><span class="pr">$149 flat call-out</span></div>
+</div></div></section>
+
+<section class="steps" id="how"><div class="wrap">
+<h2>How it works</h2>
+<p class="sub">Three steps, usually done the same day.</p>
+<div class="st">
+<div><h3>You call or book</h3><p>Tell us what’s happening. We give you an arrival window right away.</p></div>
+<div><h3>We quote, then fix</h3><p>Our plumber inspects and gives a flat price. Work starts only after you say yes.</p></div>
+<div><h3>You pay when done</h3><p>Card, cash, or check. Every repair comes with a written 1-year warranty.</p></div>
+</div></div></section>
+
+<section id="reviews"><div class="wrap">
+<h2>What Dallas homeowners say</h2>
+<p class="sub">4.9 average from 312 Google reviews.</p>
+<div class="rv">
+<blockquote><div class="stars">★★★★★</div>Pipe burst at midnight. They were here in 50 minutes and the price matched the quote.<small>Maria T., Plano</small></blockquote>
+<blockquote><div class="stars">★★★★★</div>Replaced our water heater the same afternoon and cleaned up completely.<small>James K., Irving</small></blockquote>
+<blockquote><div class="stars">★★★★★</div>Honest. They told me a $90 fix was enough when I expected a full replacement.<small>Aisha R., Frisco</small></blockquote>
+</div></div></section>
+
+<section style="padding-top:0"><div class="wrap">
+<h2>Where we work</h2>
+<p class="sub">Fast response across the metroplex.</p>
+<ul class="areas"><li>Dallas</li><li>Plano</li><li>Irving</li><li>Frisco</li><li>Garland</li><li>Richardson</li><li>Arlington</li><li>Fort Worth</li></ul>
+</div></section>
+
+<section id="faq" style="padding-top:0"><div class="wrap">
+<h2>Common questions</h2><p class="sub"> </p>
+<details><summary>Do you charge extra for nights and weekends?</summary><p>No. Emergency calls are a flat $149 call-out at any hour, and that fee is applied to your repair.</p></details>
+<details><summary>How fast can you get here?</summary><p>Emergencies within 90 minutes. Standard jobs are usually same-day or next morning.</p></details>
+<details><summary>Do you offer free estimates?</summary><p>Yes, for installs and larger projects. Send the form below and we’ll reply within 30 minutes.</p></details>
+<details><summary>Are you licensed and insured?</summary><p>Yes. We hold a Texas master plumber license and carry full liability insurance.</p></details>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap cg">
+<div>
+<h2>Get your free quote</h2>
+<p class="sub">Tell us what you need. We reply within 30 minutes during business hours.</p>
+<form id="f">
+<label>Your name<input name="n" required autocomplete="name"></label>
+<label>Phone number<input name="p" type="tel" required autocomplete="tel"></label>
+<label>What do you need?<select name="t"><option>Leak or pipe repair</option><option>Water heater</option><option>Drain cleaning</option><option>Toilet or faucet</option><option>Gas line</option><option>Other</option></select></label>
+<label>Details (optional)<textarea name="m" rows="3"></textarea></label>
+<button type="submit">Send my request</button>
+</form>
+<div id="ok">Thanks! We’ll call you within 30 minutes.</div>
+</div>
+<div class="info">
+<h2>Call us directly</h2>
+<p class="sub">Fastest for emergencies.</p>
+<p><a href="tel:+12145550187">(214) 555-0187</a></p>
+<p>1200 Main Street, Dallas, TX 75202<br>Open 24 hours, 7 days a week</p>
+<p><a href="mailto:hello@rajplumbing.com">hello@rajplumbing.com</a></p>
+</div>
+</div></section>
+
+<footer><div class="wrap">© 2026 Raj Plumbing · Dallas, TX · TX Master Plumber #M-00000<br>Sample website. Business details are placeholders.</div></footer>
+
+<div class="bar"><a class="c" href="tel:+12145550187">Call now</a><a class="q" href="#contact">Free quote</a></div>
+
+<script>
+document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();this.style.display='none';document.getElementById('ok').style.display='block'});
+</script>
+</body>
+</html>
